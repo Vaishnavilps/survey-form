@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>survey form</title>
+    <meta charset="utf-8">
+    <meta name="viewaport" content="width=device-width initial scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      
+      <h1 id="title"> Survey Form</h1>
+      <p id="description">Thank you for your time to help us grow
+        </p> 
+       
+        <form id="survey-form">
+          <fieldset>
+         <div class="personal-info">
+          <label id="name-label"> Name: <input id="name" type="text" placeholder="Enter your name here" required>
+          </label>
+          <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required>
+          </label>
+          <label id="number-label">Age: <input id="number" type="number" min="5" max="80" placeholder="Age">
+          </label>
+         </div>
+         
+          <div>
+            <label id="degree">Which degree you are currently doing: <select id="below">
+              <option>select one</option>
+              <option>btech</option>
+              <option>mtech</option>
+              <option>phd</option>
+              <option>msc</option>
+              <option>other</option>
+              </select>
+              </label>
+            <label id="current-year">Which year you are currently in: <select id="dropdown">
+              <option>select current year</option>
+              <option>first year</option>
+              <option>second year </option>
+              <option>third yearr</option>
+              <option>fourth year</option>
+              <option>others</option>
+              </select>
+              </label>
+           </div>
+           <div>
+              <label id="sports">Are you interested in sports: </label>
+              
+              <label><input type="radio" name="interest-in-sports" value="yes">Yes</input></label>
+               <label> <input type="radio" name="interest-in-sports" value="No">No</input></label>
+                <label><input type="radio" name="interest-in-sports" value="maybe">Maybe</input></label>
+                <label><input type="radio" name="interest-in-sports" value="not sure">Not sure</input>
+                 </label>
+                 </div>
+                 <label>Which are the following sports you are interested in: </label>
+         <label id="spots-subs"><input type="checkbox" value="chess" >chess</label>
+         <label><input type="checkbox" value="football">football</label>
+         <label><input type="checkbox" value="basketball">basketball</label>
+         <label><input type="checkbox" value="volleyball">volleyball</label>
+         <label>Do you like to continue higher studies</label>
+         <label><input type="radio" name="studies" value="yes">yes</label>
+         <label><input type="radio" name="studies" value="no">No</label>
+         <label>Any queries? Ask below.</label>
+         <textarea name="comments" rows="2" cols="30"  placeholder="type your comments here"></textarea> 
+          <input type="submit" id="submit" value="submit"> 
+          </fieldset>
+            </form>
+      </body>
+  </html>
